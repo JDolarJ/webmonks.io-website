@@ -2,6 +2,20 @@
 /* Footer */
 
 	#footer {
+		//http://www.webpagefx.com/web-design/hex-to-rgb/
+		//background-color: #2e3141;
+		//background-color: rgba(46, 49, 65, 0.6);
+		//background-color: rgba(255, 255, 255, 0.8);
+		//margin-top: -6.5em;
+		background-color: #2e3141;
+		margin-top: 26.5em;
+		//padding-top: 4.5em;
+
+		//color: #2e3141;
+		//h2, a {color:#2e3141;}
+		color: #ffffff;
+		h2, a {color:#ffffff;}
+
 		.inner {
 			@include padding(5em, 0);
 			@include vendor('display', 'flex');
@@ -17,6 +31,22 @@
 			form {
 				margin: 0 _size(section-spacing, large) 0 0;
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
+			}
+
+			.contact-outer {
+				//display: flex;
+				@include vendor('display', 'flex');
+				//flex-direction: row;
+				@include vendor('flex-direction', 'row');
+				//justify-content: flex-start;
+				@include vendor('justify-content', 'flex-start');
+				//align-items: center;
+				@include vendor('align-items', 'center');
+
+				.icons {
+					margin-left: auto;
+					align-self: flex-end;
+				}
 			}
 
 			.contact {

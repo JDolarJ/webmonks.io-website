@@ -114,6 +114,7 @@
 		}
 
 		&:after {
+			//background-color: rgba(46, 49, 65, 0.5);
 			@include vendor('transform', 'scaleY(-1)');
 			bottom: (_size(wrapper-edges, large) * -1);
 			left: 0;

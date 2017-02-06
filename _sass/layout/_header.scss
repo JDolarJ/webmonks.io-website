@@ -3,7 +3,7 @@
 
 	#header {
 		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
-		background-color: transparentize(desaturate(lighten(_palette(bg), 3), 1.5), 0.50);
+		background-color: transparentize(desaturate(lighten(_palette(bg), 3), 1.5), 0.60);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -13,19 +13,52 @@
 		width: 100%;
 		z-index: _misc(z-index-base);
 
+		/*
+				.close {
+			background-image: url('images/close.svg');
+			background-position: 75% 25%;
+			background-repeat: no-repeat;
+			background-size: 2em 2em;
+			border: 0;
+			content: '';
+			display: block;
+			height: 4em;
+			overflow: hidden;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			text-indent: 4em;
+			top: 0;
+			width: 4em;
+		}
+		 */
+
 		h1 {
 			@include vendor('transition', (
 				'opacity #{_duration(transition)} ease-in-out',
 				'visibility #{_duration(transition)}'
 			));
 			border-bottom: 0;
-			font-size: 0.8em;
+			font-size: 1em;
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
 
+			// Fiddling to crank to logo in there
+			background-image: url('https://thewebmonks.github.io/assets/webmonks/logo/logo-white.png');
+			background-repeat: no-repeat;
+			background-position: 0 10px;
+			background-size: 80px;
+			font-family: 'Dosis', sans-serif;
+
 			a {
+				padding-left: 90px;
 				border: 0;
+			}
+
+			&.always {
+				opacity: 1 !important;
+				visibility: visible !important;
 			}
 		}
 

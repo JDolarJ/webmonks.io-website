@@ -41,6 +41,7 @@
 			@include vendor('transform', 'translateY(0)');
 			opacity: 1;
 			margin: 0 0 (_size(element-margin) * 0.65) 0;
+			margin-right: 20px;
 
 			.icon {
 				border-radius: 100%;
@@ -69,7 +70,6 @@
 			//border-bottom: solid 2px _palette(border);
 			font-size: 3.2em;
 			margin-bottom: _size(element-margin) * 0.1;
-			margin-left: 20px;
 			padding-bottom: _size(element-margin) * 0.1;
 		}
 

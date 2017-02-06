@@ -1,0 +1,59 @@
+
+
+
+.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      font-size: 1.35em;
+      //padding: 0 0.5em 0 0;
+      display: inline-block;
+      padding: 0 1em 0 0;
+    }
+
+    a {
+      &.fa-github {
+          background-color: #2b2b2b !important;
+          color: #ffffff !important;
+      }
+
+      &.fa-twitter {
+          background-color: #84dae7;
+
+          color: #ffffff !important;
+      }
+
+      &.fa-facebook {
+          background-color: #75aae6 !important;
+          color: #ffffff !important;
+      }
+
+      &.fa-medium {
+          background-color: #00ab6b !important;
+          color: #ffffff !important;
+      }
+
+      -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      display: inline-block;
+      border-radius: 100%;
+      width: 2.125em;
+      height: 2.125em;
+      line-height: 2.125em;
+      text-align: center;
+      background-color: #404040;
+      color: #ffffff !important;
+
+      text-decoration: none;
+      border-bottom: none;
+      position: relative;
+
+      .label {
+        display: none;
+      }
+    }
+}
