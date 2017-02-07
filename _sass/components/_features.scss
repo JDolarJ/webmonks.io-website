@@ -31,6 +31,16 @@
 					width: 100%;
 				}
 			}
+
+			&.team{
+				background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0)),
+									url('../images/st/team1.jpg');
+			}
+
+			&.academy {
+				background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0)),
+									url('../images/st/academy.jpg');
+			}
 		}
 
 		@include breakpoint(medium) {
