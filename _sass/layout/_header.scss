@@ -84,6 +84,10 @@
 					margin-left: 0.75em;
 				}
 
+				&:hover {
+					background-color: _palette(bg);
+				}
+
 				&[href="#menu"] {
 					@include icon;
 					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');

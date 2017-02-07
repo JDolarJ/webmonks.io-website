@@ -20,8 +20,7 @@
 	body {
 		background-color:		_palette(bg);
 
-		background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.7), transparentize(_palette(bg), 0.7)),
-								url('../images/st/bg.jpg');
+		background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.7), transparentize(_palette(bg), 0.7));
 		//background-image:		url('../images/st/bg.jpg');
 
 		background-size:		auto,
@@ -42,6 +41,35 @@
 				}
 			}
 
+		&.bg0 {
+			background-image:
+				linear-gradient(to top, transparentize(_palette(bg), 0.7), transparentize(_palette(bg), 0.5)),
+				url('../images/st/bg0.jpg');
+		}
+
+		&.bg1 {
+			background-image:
+				linear-gradient(to top, transparentize(_palette(bg), 1), transparentize(_palette(bg), 0.7)),
+				url('../images/st/bg1.jpg');
+		}
+
+		&.bg2 {
+			background-image:
+				linear-gradient(to top, transparentize(_palette(bg), 0.7), transparentize(_palette(bg), 0.3)),
+				url('../images/st/bg2.jpg');
+		}
+
+		&.bg3 {
+			background-image:
+				linear-gradient(to top, transparentize(_palette(bg), 1), transparentize(_palette(bg), 0.5)),
+				url('../images/st/bg3.jpg');
+		}
+
+		&.bg4 {
+			background-image:
+				linear-gradient(to top, transparentize(_palette(bg), 0.8), transparentize(_palette(bg), 0.5)),
+				url('../images/st/bg4.jpg');
+		}
 	}
 
 	.blue {
