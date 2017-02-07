@@ -4,13 +4,25 @@
 	#banner {
 		@include padding(10em, 0, (0, 0, _size(wrapper-edges, large) * -0.5, 0));
 
+		.block-blue {
+			color:#ffffff;
+			background-color: #2e3141;
+			padding:0 15px;
+		}
+
+		.block-red {
+			color:#ffffff;
+			background-color: #a94343;
+			padding:0 15px;
+		}
+
 		.inner {
-			&:first-child {
-				border-bottom: solid 2px rgba(255,255,255,0.125);
-			}
-			&:nth-child(2) {
-				margin-top: 20px;
-			}
+			//&:first-child {
+			//	border-bottom: solid 2px rgba(255,255,255,0.125);
+			//}
+			//&:nth-child(2) {
+			//	margin-top: 20px;
+			//}
 
 			margin: 0 auto;
 			width: _size(inner);
