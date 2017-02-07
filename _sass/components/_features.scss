@@ -6,6 +6,12 @@
 		@include vendor('flex-wrap', 'wrap');
 		margin: 0 0 _size(element-margin) 0;
 
+		&.jobs {
+			article {
+				background-color: #2e3141;
+			}
+		}
+
 		article {
 			@include padding(1.75em, 1.75em);
 			background-color: desaturate(lighten(_palette(bg), 3), 1.5);
@@ -38,7 +44,7 @@
 			}
 
 			&.academy {
-				background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0)),
+				background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2	), transparentize(_palette(bg), 0)),
 									url('../images/st/academy.jpg');
 			}
 		}
