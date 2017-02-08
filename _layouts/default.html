@@ -20,14 +20,15 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="/static/css/ie8.css" /><![endif]-->
 	</head>
 
-	<body class="bg0">
+	<body class="{% if page.bg_class %}{{ page.bg_class }}{% else %}bg0{% endif %}">
+		{% if page.bg_class == nil %}
 		<!-- Preload the background image -->
 		<script>
-			var rand = Math.round(Math.random() * 4);
-			console.log('Randy: ' + rand);
-			new Image().src='/static/images/st/bg' + rand + '.jpg';
-			document.body.className = 'bg' + rand;
+			var randy = Math.round(Math.random() * 4);
+			new Image().src='/static/images/st/bg' + randy + '.jpg';
+			document.body.className = 'bg' + randy;
 		</script>
+		{% endif %}
 
 		<!-- Page Wrapper -->
 		<div id="page-wrapper">
@@ -59,7 +60,7 @@
 								Kempische Steenweg 311/1.02<br />
 								3500 Hasselt, Belgium
 							</li>
-							<li class="fa-envelope"><a href="#">hello@webmonks.io</a></li>
+							<li class="fa-envelope"><a href="#">{{ site.email }}</a></li>
 						</ul>
 
 						<ul class="icons">
