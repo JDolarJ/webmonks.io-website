@@ -1,5 +1,13 @@
 # thewebmonks.github.io
-Website
+
+Website uses [Jekyll](https://jekyllrb.com) and is hosted on GitHub Pages.
+
+Start developing:
+```bash
+$ jekyll serve
+```
+
+Convert stock images with [ImageMagick](https://www.imagemagick.org/).
 
 ```bash
 $ convert -quality 50 -resize 1680 st/shutterstock_394698070.jpg t.jpg
@@ -7,8 +15,6 @@ $ convert -quality 50 -resize 1680 st/shutterstock_394698070.jpg t.jpg
 
 ## TODO
 
-* move shutterstocks to assets
-* impact sourcing read more -> generic page
 * add technology
-* create sub pages
-* add jobs section
+* projects: OSS computer vision, freelance platform
+

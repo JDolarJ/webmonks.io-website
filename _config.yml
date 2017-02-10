@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: WebMonks
 email: hello@webmonks.io
-description: An Innovative Technology Company with a social impact
+description: Innovative Technology  with social impact
 root: http://webmonks.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://webmonks.io" # the base hostname & protocol for your site, e.g. http://example.com
